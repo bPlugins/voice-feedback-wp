@@ -22,11 +22,7 @@ class BPLVoiceFeedback {
         require_once BPLVF_DIR_PATH . 'includes/api/class-bplvf-rest.php';
         require_once BPLVF_DIR_PATH . 'includes/feature/class-bplvf-handle-email-notification.php';
         require_once BPLVF_DIR_PATH . 'includes/feature/class-bplvf-handle-feedback-upload.php';
-        require_once BPLVF_DIR_PATH . 'includes/feature/class-bplvf-shortcode.php';
-
-        if(BPLVF_HAS_PRO) {
-            require_once BPLVF_DIR_PATH . 'includes/admin/class-bplvf-fs-license.php';
-        }
+        require_once BPLVF_DIR_PATH . 'includes/feature/class-bplvf-shortcode.php'; 
 
         new BPLVF_Handle_Feedback_Upload();
     }

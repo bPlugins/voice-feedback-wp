@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Voice Feedback – Collect Anonymous Voice Messages & Real User Insights Instantly 2.2.4\n"
+"Project-Id-Version: Voice Feedback – Collect Anonymous Voice Messages & Real User Insights Instantly 2.2.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/voice-feedback\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-08T08:52:15+00:00\n"
+"POT-Creation-Date: 2026-06-09T09:07:19+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: voice-feedback\n"
@@ -38,130 +38,80 @@ msgstr ""
 msgid "<span style=\"color: #f18500;\">Help & Demos</span>"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/General/General.js:28
-msgid "Settings"
+#: src/admin-dashboard/utils/data.js:175
+msgid "Email Notifications"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/General/General.js:32
-msgid "Allow Screen Record"
+#: src/admin-dashboard/utils/data.js:176
+msgid "Customizable Email Templates"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/General/General.js:49
-#: src/block/Components/Backend/Settings/Style/Style.js:146
-msgid "Recording Tabs"
+#: src/admin-dashboard/utils/data.js:177
+msgid "Screen Record Option"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/General/General.js:53
-msgid "Show/Hide Button Icon"
+#: src/admin-dashboard/utils/data.js:178
+msgid "Global Drawer Position(Left, Right)"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/General/General.js:72
-msgid "Show/Hide Button Text"
+#: src/admin-dashboard/utils/data.js:179
+msgid "Buttons Typography"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/General/General.js:94
+#: src/block/Components/Backend/Settings/General/General.js:30
 msgid "Audio Settings"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/General/General.js:115
+#: src/block/Components/Backend/Settings/General/General.js:36
 msgid "Start Recording Button Text"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/General/General.js:135
-msgid "Video Settings"
+#: src/block/Components/Backend/Settings/Settins.js:66
+msgid "What's New in Premium"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/General/General.js:156
-msgid "Start Screen Recording Button Text"
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Settins.js:88
-msgid "All Screen Recording: "
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Settins.js:90
-msgid "By activate this feature user can give screen recording also with their voice."
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Settins.js:98
-msgid "Customize Your Feedback Form: "
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Settins.js:103
-msgid "Customize everything in premium version."
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Settins.js:111
-msgid "Buttons Text Typography: "
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Settins.js:113
-msgid "Change button font size, font weight, font family, line height, font style and etc."
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Style/Style.js:46
+#: src/block/Components/Backend/Settings/Style/Style.js:50
 msgid "Container"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/Style/Style.js:49
+#: src/block/Components/Backend/Settings/Style/Style.js:55
 msgid "Width"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/Style/Style.js:94
-#: src/block/Components/Backend/Settings/Style/Style.js:195
-#: src/block/Components/Backend/Settings/Style/Style.js:299
+#: src/block/Components/Backend/Settings/Style/Style.js:100
+#: src/block/Components/Backend/Settings/Style/Style.js:173
 msgid "Border Radius"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/Style/Style.js:111
-#: src/block/Components/Backend/Settings/Style/Style.js:364
-#: src/block/Components/Backend/Settings/Style/Style.js:406
+#: src/block/Components/Backend/Settings/Style/Style.js:117
+#: src/block/Components/Backend/Settings/Style/Style.js:238
+#: src/block/Components/Backend/Settings/Style/Style.js:280
 msgid "Background Color"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/Style/Style.js:125
-#: src/block/Components/Backend/Settings/Style/Style.js:316
+#: src/block/Components/Backend/Settings/Style/Style.js:131
+#: src/block/Components/Backend/Settings/Style/Style.js:190
 msgid "Padding"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/Style/Style.js:152
-msgid "Tab Text Typography"
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Style/Style.js:173
-msgid "Icon Size"
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Style/Style.js:215
-msgid "Active Tab Color"
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Style/Style.js:233
-msgid "Active Tab Background Color"
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Style/Style.js:256
-msgid "Button Padding"
-msgstr ""
-
-#: src/block/Components/Backend/Settings/Style/Style.js:282
+#: src/block/Components/Backend/Settings/Style/Style.js:156
 msgid "Buttons"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/Style/Style.js:286
+#: src/block/Components/Backend/Settings/Style/Style.js:162
 msgid "Typography"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/Style/Style.js:331
+#: src/block/Components/Backend/Settings/Style/Style.js:205
 msgid "Normal"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/Style/Style.js:335
+#: src/block/Components/Backend/Settings/Style/Style.js:209
 msgid "Hover"
 msgstr ""
 
-#: src/block/Components/Backend/Settings/Style/Style.js:346
-#: src/block/Components/Backend/Settings/Style/Style.js:388
+#: src/block/Components/Backend/Settings/Style/Style.js:220
+#: src/block/Components/Backend/Settings/Style/Style.js:262
 msgid "Text Color"
 msgstr ""
 

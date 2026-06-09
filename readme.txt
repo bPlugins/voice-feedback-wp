@@ -151,8 +151,9 @@ Please report security bugs found in the source code of the Voice Feedback plugi
 
 == Changelog ==
 
-= 2.2.3 - 9 June 2026 =
-* **Feature:** Added Email Gate option to require users to enter their name and email before submitting voice feedback.
+= 2.2.3 - 10 June 2026 =
+* **Update:** Removed restricted "Locked Fields" to improve user flexibility
+* **New:** Added Email Gate option to require users to enter their name and email before submitting voice feedback.
 * **Fix:** Corrected translation string extractor parser crashes in `npm run i18n`.
 * **Fix:** Standardized vertical layout of titles and subtitles in settings cards.
 
@@ -201,3 +202,48 @@ Updated with new features
 
 = 1.0.0 =  
 First release. Enables site visitors to record and submit voice feedback.
+
+
+== Source Code ==
+
+You can find the source code, report bugs, and contribute to the development of this plugin on our GitHub repository: 
+[**Voice Feedback on GitHub**](https://github.com/bPlugins/voice-feedback-wp)
+
+== External Services ==
+
+This plugin connects to the following external services. Connections are made only from the plugin's admin dashboard pages and are not triggered for your site's visitors on the front end.
+
+= bPlugins API =
+
+* **Service:** bPlugins product API – `https://api.bplugins.com`
+* **What it does:** When you open the plugin's dashboard, the plugin requests product information (such as the plugin's own details and other plugins by bPlugins) so it can display product cards, version information, and upgrade options.
+* **What data is sent:** A request is made to the bPlugins API endpoint with the product identifier (e.g. `https://api.bplugins.com/wp-json/bpl/v1/products/{id}`). No personal data or site content is sent as part of this request.
+* **When:** Only while an administrator is viewing the plugin's dashboard in wp-admin.
+* **Terms of Service:** [https://bplugins.com/terms-of-service/](https://bplugins.com/terms-of-service/)
+* **Privacy Policy:** [https://bplugins.com/privacy-policy/](https://bplugins.com/privacy-policy/)
+
+= WordPress.org Plugins API =
+
+* **Service:** WordPress.org Plugins Info API – `https://api.wordpress.org`
+* **What it does:** The dashboard queries the public WordPress.org Plugins API to list other plugins published by the author (titles, icons, ratings, active installs, etc.).
+* **What data is sent:** A public, read-only query request (e.g. `https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request[author]=bplugins`). No personal data is sent.
+* **When:** Only while an administrator is viewing the plugin's dashboard in wp-admin.
+* **Terms of Service:** [https://wordpress.org/about/privacy/](https://wordpress.org/about/privacy/)
+* **Privacy Policy:** [https://wordpress.org/about/privacy/](https://wordpress.org/about/privacy/)
+
+== Third-Party Libraries ==
+
+This plugin bundles the following third-party JavaScript/PHP libraries.
+
+= Freemius SDK =
+
+* **Source:** [https://freemius.com/](https://freemius.com/)
+* **GitHub:** [https://github.com/Freemius/wordpress-sdk](https://github.com/Freemius/wordpress-sdk)
+* **License:** GPLv3 – [https://github.com/Freemius/wordpress-sdk/blob/master/LICENSE.txt](https://github.com/Freemius/wordpress-sdk/blob/master/LICENSE.txt)
+* **Purpose:** Provides opt-in usage tracking and analytics to help improve the plugin.
+
+= bpl-tools =
+* Source / GitHub: https://github.com/bPlugins/bpl-tools
+* License: GPL-2.0-or-later – https://www.gnu.org/licenses/gpl-2.0.html
+* Purpose: Shared utility library providing admin dashboard components and common Gutenberg editor controls.
+* External Services: The library may connect to bPlugins, WordPress.org, and Freemius services for product data and checkout functionality. See full details: https://github.com/bPlugins/bpl-tools#external-requests--why-they-are-made
