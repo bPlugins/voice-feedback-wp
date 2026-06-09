@@ -1,0 +1,89 @@
+.notification5 {
+  position: fixed;
+  z-index: 9999;
+  width: 20rem;
+  height: fit-content;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #10b981, #16a34a);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.8s ease-in-out;
+
+  &.topRight {
+    top: 1.5rem;
+    right: 1.5rem;
+    transform: translateY(-300px);
+  }
+  &.bottomRight {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    transform: translateY(300px);
+  }
+  &.topLeft {
+    left: 1.5rem;
+    top: 1.5rem;
+    transform: translateY(-300px);
+  }
+  &.bottomLeft {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    transform: translateY(300px);
+  }
+
+  &.continous {
+    opacity: 0;
+    transform: unset;
+  }
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .contentTitle {
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0 !important;
+  }
+
+  .contentSubTitle {
+    margin: 0;
+    padding: 0 !important;
+    font-size: 0.75rem;
+    color: rgba(220, 252, 231, 0.9);
+  }
+
+  .notification__close-btn {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+
+    &:hover {
+      background-color: #059669;
+    }
+
+    .icon {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}

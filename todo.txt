@@ -1,0 +1,22 @@
+Please keep note of this 2 link for further use in voice feedback
+https://react-voice-visualizer.vercel.app/
+https://codesandbox.io/p/sandbox/react-sound-audio-visualizer-k7fxk4?file=%2Fsrc%2FApp.tsx
+
+
+Important Note For Development :  Implement Process Should Follow This System
+
+    Frontend: User clicks "Send Voice Feedback"
+    ↓ ✅
+    AJAX: voice_feedback_handle_upload()
+    ↓ ✅
+    Apply Rate Limit & Spam rules
+    ↓ Way to Development
+    Apply Submission Handling rules
+    ↓ ✅
+    Check Privacy & Security (store IP or anonymize)
+    ↓
+    Save feedback according to Data Management settings
+    ↓ ✅
+    Send Email & Logs
+    ↓ ✅
+    Update Analytics / Insights

@@ -1,0 +1,292 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Fields/RangeControl/RangeControl.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.range-control {
+  margin-bottom: 30px;
+}
+.range-control .range-wrapper .range-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  gap: 20px;
+}
+.range-control .range-wrapper .range-input .range-container {
+  width: 100%;
+}
+.range-control .range-wrapper .range-input .range-container .range-slider {
+  width: 100%;
+  height: 10px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+.range-control .range-wrapper .range-input .range-container .range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #146ef5;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.range-control .range-wrapper .range-input .range-container .range-slider::-webkit-slider-thumb:hover {
+  background: #146ef5;
+  transform: scale(1.1);
+}
+.range-control .range-wrapper .range-input .range-container .range-slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #146ef5;
+  cursor: pointer;
+  border: none;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.range-control .range-wrapper .range-input .range-container .range-slider::-moz-range-thumb:hover {
+  background: #146ef5;
+  transform: scale(1.1);
+}
+.range-control .range-wrapper .range-input .range-container .range-slider:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(58, 122, 219, 0.3);
+}
+.range-control .range-wrapper .range-input .range-container .range-slider:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 3px rgba(58, 122, 219, 0.3);
+}
+.range-control .range-wrapper .range-input .value-display {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  min-width: 60px;
+  justify-content: center;
+}
+.range-control .range-wrapper .range-input .value-display .range-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #146ef5;
+}
+.range-control .range-wrapper .range-input .value-display .unit {
+  font-size: 12px;
+  color: #6b7280;
+}
+.range-control .range-wrapper .help-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  font-style: italic;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Components/Shared/FieldHeader/FieldHeader.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.bplvf-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.bplvf-header .bplvf-header-icon {
+  display: flex;
+}
+.bplvf-header .bplvf-header-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #146ef5;
+}
+.bplvf-header .bplvf-field-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #22262e;
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+}
+
+.bplvf-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bplvf-container .bplvf-header {
+  margin-bottom: 0;
+}
+.bplvf-container .bplvf-pro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #f59e0b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+.bplvf-container .bplvf-pro-badge .bplvf-pro-icon {
+  display: flex;
+  align-items: center;
+}
+.bplvf-container .bplvf-pro-badge .bplvf-pro-icon svg {
+  width: 14px;
+  height: 14px;
+  fill: #ffffff;
+}
+.bplvf-container .bplvf-pro-badge .bplvf-pro-text {
+  line-height: 1;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Fields/Colors/Colors.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.bplvf-colors-field {
+  margin-bottom: 30px;
+}
+.bplvf-colors-field .field-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bplvf-colors-field .field-title .icon svg {
+  width: 30px;
+  height: 30px;
+  color: #8b5cf6;
+}
+.bplvf-colors-field .bplvf-colors-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.bplvf-colors-field .bplvf-colors-group .bplvf-bg-color {
+  width: 50%;
+}
+.bplvf-colors-field .bplvf-colors-group .bplvf-text-color {
+  width: 50%;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Fields/Color/Color.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+.bplvf-color-control.header {
+  margin-bottom: 30px;
+}
+.bplvf-color-control .field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+.bplvf-color-control .color-input-group {
+  display: flex;
+  gap: 8px;
+}
+.bplvf-color-control .color-input-group span {
+  display: none;
+}
+.bplvf-color-control .color-input-group .color-picker-preview {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  border-radius: 10px;
+}
+.bplvf-color-control .color-input-group .color-text-input {
+  flex: 1;
+  padding: 5px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.bplvf-color-control .color-input-group .color-text-input:focus {
+  outline: none;
+  border-color: #146ef5;
+  box-shadow: 0 0 0 3px rgba(58, 122, 219, 0.1);
+}
+.bplvf-color-control .color-input-group .color-text-input:hover {
+  border-color: #9ca3af;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Fields/BoxControl/BoxControl.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.bpl-boxControl__container {
+  margin-bottom: 30px;
+}
+.bpl-boxControl__container .bpl-boxControl__cross-layout {
+  display: flex;
+  justify-content: center;
+}
+.bpl-boxControl__container .bpl-boxControl__cross-layout .bpl-boxControl__cross-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  max-width: 350px;
+}
+.bpl-boxControl__container .bpl-boxControl__cross-layout .bpl-boxControl__cross-grid .bpl-boxControl__input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bpl-boxControl__container .bpl-boxControl__cross-layout .bpl-boxControl__cross-grid .bpl-boxControl__input-group label {
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.bpl-boxControl__container .bpl-boxControl__cross-layout .bpl-boxControl__cross-grid .bpl-boxControl__input-group .bpl-boxControl__padding-input {
+  width: 60px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.bpl-boxControl__container .bpl-boxControl__cross-layout .bpl-boxControl__cross-grid .bpl-boxControl__input-group .bpl-boxControl__padding-input:focus {
+  outline: none;
+  border-color: #146ef5;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+.bpl-boxControl__container .bpl-boxControl__cross-layout .bpl-boxControl__cross-grid .bpl-boxControl__center-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.bpl-boxControl__container .bpl-boxControl__cross-layout .bpl-boxControl__cross-grid .bpl-boxControl__center-icon .bpl-boxControl__padding-icon {
+  width: 80px;
+  height: 45px;
+  background: #146ef5;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  border: 1px solid #146ef5;
+}
+
+/*# sourceMappingURL=src_admin-pages_SettingsPage_Settings_TemplateSettings_DefaultDrawer_Styles_js-src_admin-page-2382cb.css.map*/

@@ -1,0 +1,1244 @@
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
+.wp-block-bplvf-voice-feedback {
+  display: flex;
+  flex-direction: column;
+  /* Animations */
+  /* Safari-only override */
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-toggle {
+  position: fixed;
+  bottom: 40%;
+  z-index: 99999;
+  writing-mode: sideways-lr;
+  transform: translate(100px, 50%);
+  padding: 12px 8px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  height: auto;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-toggle.delayed {
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+  animation-delay: 0.3s;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-toggle:hover {
+  background-color: #1da851;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-toggle.visible {
+  transform: translate(0, 50%) !important;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-drawer {
+  position: fixed;
+  bottom: 40%;
+  right: 0;
+  width: 380px;
+  max-width: 100%;
+  background: #fff;
+  border-left: 2px solid #25d366;
+  transform: translate(100%, 50%);
+  transition: transform 0.3s ease-in-out;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  z-index: 99999;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-drawer.open {
+  transform: translate(0, 50%) !important;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-drawer .drawer-header {
+  padding: 12px 16px;
+  background: #25d366;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-drawer .drawer-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-drawer .drawer-header .drawer-close {
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-drawer .drawer-header .drawer-close svg {
+  font-size: 20px;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .drawer-voice-feedback .voice-feedback-drawer .drawer-body {
+  padding: 16px;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback {
+  position: fixed;
+  z-index: 99999;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.bottomRight {
+  right: 20px;
+  bottom: 20px;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.bottomRight .feedback-toggle {
+  transform: translateY(500px);
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.bottomRight .feedback-toggle.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.bottomRight .sticky-feedback-content {
+  bottom: 60px;
+  right: 0;
+  transform-origin: bottom right;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.bottomLeft {
+  left: 20px;
+  bottom: 20px;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.bottomLeft .feedback-toggle {
+  transform: translateY(500px);
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.bottomLeft .feedback-toggle.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.bottomLeft .sticky-feedback-content {
+  bottom: 60px;
+  left: 0;
+  transform-origin: bottom left;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.topRight {
+  right: 20px;
+  top: 20px;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.topRight .feedback-toggle {
+  transform: translateY(-500px);
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.topRight .feedback-toggle.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.topRight .sticky-feedback-content {
+  top: 60px;
+  right: 0;
+  transform-origin: top right;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.topLeft {
+  left: 20px;
+  top: 20px;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.topLeft .feedback-toggle {
+  transform: translateY(-500px);
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.topLeft .feedback-toggle.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback.topLeft .sticky-feedback-content {
+  top: 60px;
+  left: 0;
+  transform-origin: top left;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback .feedback-toggle {
+  background: linear-gradient(to top right, #f97316, #ef4444, #ec4899);
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback .feedback-toggle svg {
+  width: 28px;
+  height: 28px;
+  color: inherit;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback .feedback-toggle:hover {
+  transform: scale(1.1);
+  animation: none;
+  background: linear-gradient(to top right, #ea580c, #dc2626, #db2777);
+  box-shadow: 0 0 35px rgba(255, 87, 34, 0.6);
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback .feedback-toggle:focus {
+  outline: none;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback .sticky-feedback-content {
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.7s ease;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(255, 87, 34, 0.2);
+  border: 2px solid #fed7aa;
+  background: #fff;
+  pointer-events: none;
+}
+@media screen and (max-width: 768px) {
+  .wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback .sticky-feedback-content {
+    width: 250px;
+  }
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback .sticky-feedback-content .contentTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback .sticky-feedback-content .contentSubTitle {
+  margin: 0;
+  text-align: center;
+  margin-top: -23px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.wp-block-bplvf-voice-feedback .global-voice-feedback-wrapper .bplvf-sticky-feedback .sticky-feedback-content.show {
+  opacity: 1;
+  transform: scale(1);
+  animation: bounce-in 0.7s ease-out;
+  pointer-events: auto;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@supports (-webkit-hyphens: none) and (not (overflow: -webkit-marquee)) {
+  .wp-block-bplvf-voice-feedback .drawer-voice-feedback {
+    right: 20px !important;
+    /* Safari override */
+  }
+}
+.wp-block-bplvf-voice-feedback .body-voice-feedback {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #f0fdf4;
+  font-family: sans-serif;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.wp-block-bplvf-voice-feedback .body-voice-feedback.left {
+  margin-left: 0;
+  margin-right: auto;
+}
+.wp-block-bplvf-voice-feedback .body-voice-feedback.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-block-bplvf-voice-feedback .body-voice-feedback.right {
+  margin-left: auto;
+  margin-right: 0;
+}
+.wp-block-bplvf-voice-feedback .recording-mode-toggle {
+  display: flex;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  padding: 4px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .audioBtn,
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .screenBtn {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: transparent;
+}
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .audioBtn:focus,
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .screenBtn:focus {
+  outline: none;
+}
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .audioBtn h3,
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .screenBtn h3 {
+  margin: 0;
+  padding: 0 !important;
+  font-weight: normal;
+  font-size: 20px;
+}
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .audioBtn span,
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .screenBtn span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  line-height: 0;
+}
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .audioBtn span svg,
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .screenBtn span svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #666;
+}
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .audioBtn.active,
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .screenBtn.active {
+  background-color: #4caf50;
+  font-weight: bold;
+}
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .audioBtn.active h3,
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .screenBtn.active h3 {
+  color: white;
+}
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .audioBtn.active span svg,
+.wp-block-bplvf-voice-feedback .recording-mode-toggle .screenBtn.active span svg {
+  color: white;
+}
+.wp-block-bplvf-voice-feedback .waveform-playback,
+.wp-block-bplvf-voice-feedback .waveform-record {
+  margin-bottom: 30px;
+}
+.wp-block-bplvf-voice-feedback .feedback-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.wp-block-bplvf-voice-feedback .feedback-buttons button {
+  flex: 1 1 45%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  background-color: #25d366;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.wp-block-bplvf-voice-feedback .feedback-buttons button svg {
+  font-size: 20px;
+}
+.wp-block-bplvf-voice-feedback .feedback-buttons button:focus-visible {
+  outline: none;
+  border: none;
+}
+.wp-block-bplvf-voice-feedback .feedback-buttons button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+.wp-block-bplvf-voice-feedback .feedback-buttons button:hover:not(:disabled) {
+  background-color: #1da851;
+}
+.wp-block-bplvf-voice-feedback .feedback-buttons button:only-child {
+  flex: 1 1 100%;
+}
+.wp-block-bplvf-voice-feedback .feedback-buttons .startBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.wp-block-bplvf-voice-feedback .feedback-buttons .startBtn h3 {
+  margin: 0;
+  padding: 0 !important;
+  font-weight: normal;
+  font-size: 20px;
+  color: white;
+}
+.wp-block-bplvf-voice-feedback .feedback-buttons .startBtn svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-header {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-header h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.15rem;
+  color: #111827;
+  font-weight: 600;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-header p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.4;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-fields .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-fields .form-group label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #374151;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-fields .form-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #1f2937;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-fields .form-group input:focus {
+  outline: none;
+  border-color: #25d366;
+  box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.15);
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-fields .form-group input.has-error {
+  border-color: #ef4444;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-fields .form-group input.has-error:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-fields .form-group .error-message {
+  font-size: 0.75rem;
+  color: #ef4444;
+  margin-top: 2px;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 5px;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-actions button {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-actions .cancel-btn {
+  background-color: transparent;
+  color: #4b5563;
+  border-radius: 30px;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-actions .cancel-btn:hover:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #111827;
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-actions .submit-btn {
+  color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.wp-block-bplvf-voice-feedback .bplvf-email-gate .gate-actions .submit-btn:hover:not(:disabled) {
+  filter: brightness(0.92);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/Components/Common/GlobalTemplates/SlideIn/SlideIn.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.slideIn-feedback {
+  position: fixed;
+  z-index: 9999;
+  transition: transform 0.5s ease;
+  display: flex;
+  /* --- POSITION VARIANTS --- */
+  /* --- INNER STYLING --- */
+}
+.slideIn-feedback.rightCenter {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(450px);
+}
+.slideIn-feedback.rightCenter.visible {
+  transform: translateY(-50%) translateX(370px);
+}
+.slideIn-feedback.rightCenter.visible.open {
+  transform: translateY(-50%) translateX(0);
+}
+.slideIn-feedback.rightCenter .slideIn-feedback-toggle {
+  height: 100%;
+}
+.slideIn-feedback.leftCenter {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(-450px);
+}
+.slideIn-feedback.leftCenter.visible {
+  transform: translateY(-50%) translateX(-370px);
+}
+.slideIn-feedback.leftCenter.visible.open {
+  transform: translateY(-50%) translateX(0);
+}
+.slideIn-feedback.leftCenter .slideIn-feedback-inner {
+  flex-direction: row-reverse;
+  border-radius: 0 1rem 1rem 0;
+}
+.slideIn-feedback.leftCenter .slideIn-feedback-toggle {
+  height: -webkit-fill-available;
+  width: inherit;
+}
+.slideIn-feedback.leftCenter .slideIn-feedback-toggle button.toggle-button {
+  border-radius: 0 1rem 1rem 0;
+}
+.slideIn-feedback.bottomCenter {
+  left: 50%;
+  bottom: 0;
+  transform: translateY(400px) translateX(-50%);
+}
+.slideIn-feedback.bottomCenter.visible {
+  transform: translateY(var(--slideInHeight, 300px)) translateX(-50%);
+}
+.slideIn-feedback.bottomCenter.visible.open {
+  transform: translateY(0) translateX(-50%);
+}
+.slideIn-feedback.bottomCenter .slideIn-feedback-inner {
+  flex-direction: column;
+  border-radius: 1rem 1rem 0 0;
+}
+.slideIn-feedback.bottomCenter .slideIn-feedback-toggle {
+  width: 100%;
+}
+.slideIn-feedback.bottomCenter .slideIn-feedback-toggle button.toggle-button {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+.slideIn-feedback.bottomCenter .slideIn-feedback-toggle button.toggle-button .toggle-text {
+  writing-mode: horizontal-tb;
+}
+.slideIn-feedback.topCenter {
+  left: 50%;
+  top: 0;
+  transform: translateY(-300px) translateX(-50%);
+}
+.slideIn-feedback.topCenter.visible {
+  transform: translateY(calc(-1 * var(--slideInHeight, 190px))) translateX(-50%);
+}
+.slideIn-feedback.topCenter.visible.open {
+  transform: translateY(0) translateX(-50%);
+}
+.slideIn-feedback.topCenter .slideIn-feedback-inner {
+  flex-direction: column-reverse;
+  border-radius: 0 0 1rem 1rem;
+}
+.slideIn-feedback.topCenter .slideIn-feedback-toggle {
+  width: 100%;
+}
+.slideIn-feedback.topCenter .slideIn-feedback-toggle button.toggle-button {
+  border-radius: 0 0 1rem 1rem;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+.slideIn-feedback.topCenter .slideIn-feedback-toggle button.toggle-button .toggle-text {
+  writing-mode: horizontal-tb;
+}
+.slideIn-feedback .slideIn-feedback-inner {
+  display: flex;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.slideIn-feedback .slideIn-feedback-toggle button.toggle-button {
+  background-color: linear-gradient(to bottom, #22c55e, #16a34a);
+  color: #fff;
+  padding: 20px;
+  border-radius: 1rem 0 0 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  height: 100%;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.slideIn-feedback .slideIn-feedback-toggle button.toggle-button:hover {
+  background: linear-gradient(to bottom, #16a34a, #15803d);
+}
+.slideIn-feedback .slideIn-feedback-toggle button.toggle-button .toggle-text {
+  writing-mode: sideways-lr;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 500;
+}
+.slideIn-feedback .slideIn-feedback-content {
+  width: 320px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.slideIn-feedback .slideIn-feedback-content .contentTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.slideIn-feedback .slideIn-feedback-content .contentSubTitle {
+  margin: 0;
+  text-align: center;
+  margin-top: -20px;
+  font-size: 20px;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/Components/Common/GlobalTemplates/Notification/Notification1.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.notification1 {
+  background: linear-gradient(to right, #10b981, #059669);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.notification1.top {
+  bottom: auto;
+  top: 0;
+  transform: translateY(-100%);
+}
+.notification1.top.visible {
+  transform: translateY(0);
+}
+.notification1.bottom {
+  bottom: 0;
+  top: auto;
+  transform: translateY(100%);
+}
+.notification1.bottom.visible {
+  transform: translateY(0);
+}
+.notification1 .notification1__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1050px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.notification1 .notification1__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.notification1 .notification1__left .contentSubtitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.notification1 .notification1__right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.notification1 .notification1__right .notification1__voice-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  color: #059669;
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+.notification1 .notification1__right .notification1__voice-btn:hover {
+  background: #f0fdf4;
+}
+.notification1 .notification1__right .notification1__voice-btn .icon {
+  width: 1rem;
+  height: 1rem;
+}
+.notification1 .notification1__right .notification__close-btn {
+  padding: 0.25rem;
+  border: none;
+  border-radius: 0.375rem;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.notification1 .notification1__right .notification__close-btn:hover {
+  background: #047857;
+}
+.notification1 .notification1__right .notification__close-btn .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #fff;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/Components/Common/GlobalTemplates/Notification/Notification2.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.notification2 {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  transition: all 0.3s ease;
+  background-color: #111827;
+  color: white;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.notification2.top {
+  bottom: auto;
+  top: 50px;
+  transform: translateY(-300px) translateX(-50%);
+}
+.notification2.top.visible {
+  transform: translateY(0) translateX(-50%);
+}
+.notification2.bottom {
+  bottom: 50px;
+  top: auto;
+  transform: translateY(300px) translateX(-50%);
+}
+.notification2.bottom.visible {
+  transform: translateY(0) translateX(-50%);
+}
+.notification2__content {
+  background-color: #111827;
+  color: white;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.notification2 .contentSubTitle {
+  margin: 0;
+  padding: 0 !important;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.notification2__divider {
+  width: 1px;
+  height: 1.5rem;
+  background-color: #374151;
+}
+.notification2 .notification__close-btn {
+  padding: 0.25rem;
+  margin-left: 0.5rem;
+  border-radius: 9999px;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+.notification2 .notification__close-btn:hover {
+  background-color: #1f2937;
+}
+.notification2 .notification__close-btn .icon {
+  width: 1rem;
+  height: 1rem;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/Components/Common/GlobalTemplates/Notification/Notification3.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.notification3 {
+  background: linear-gradient(to right, #fff7ed, #fffbeb);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #fed7aa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+}
+.notification3.top {
+  bottom: auto;
+  top: 30px;
+  transform: translate(-50%, -200px);
+}
+.notification3.top.visible {
+  transform: translate(-50%, 0);
+}
+.notification3.bottom {
+  bottom: 30px;
+  top: auto;
+  transform: translate(-50%, 200px);
+}
+.notification3.bottom.visible {
+  transform: translate(-50%, 0);
+}
+@media screen and (max-width: 1024px) {
+  .notification3 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .notification3 {
+    width: 80%;
+    padding: 1rem;
+  }
+}
+.notification3 .notification3__content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .notification3 .notification3__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .notification3 .notification3__content .notification__icon-box {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .notification3 .notification3__content .notification3__record-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .notification3 .notification3__content .notification3__close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+.notification3 .notification__icon-box {
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+  background: linear-gradient(to bottom right, #fb923c, #f59e0b);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(251, 146, 60, 0.3);
+}
+.notification3 .notification__icon-box .icon {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+}
+.notification3 .notification3__text {
+  flex: 1;
+}
+.notification3 .notification3__text .contentTitle {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #111827;
+  margin: 0;
+}
+.notification3 .notification3__text .contentSubTitle {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin: 0;
+}
+.notification3 .notification3__record-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f97316;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(249, 115, 22, 0.3);
+  transition: all 0.25s ease;
+}
+.notification3 .notification3__record-btn:hover {
+  background: #ea580c;
+  box-shadow: 0 6px 15px rgba(249, 115, 22, 0.4);
+}
+.notification3 .notification3__record-btn .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.notification3 .notification__close-btn {
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.notification3 .notification__close-btn:hover {
+  background: #ffedd5;
+}
+.notification3 .notification__close-btn .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #9ca3af;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/Components/Common/GlobalTemplates/Notification/Notification4.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.notification4 {
+  position: fixed;
+  z-index: 9999;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out, opacity 0.8s ease-in-out;
+  background: linear-gradient(to top right, #7e22ce, #ec4899);
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 1.25rem;
+  max-width: 20rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.notification4.topRight {
+  top: 1.5rem;
+  right: 1.5rem;
+  transform: translateY(-300px);
+}
+.notification4.bottomRight {
+  bottom: 1.5rem;
+  right: 1.5rem;
+  transform: translateY(300px);
+}
+.notification4.topLeft {
+  left: 1.5rem;
+  top: 1.5rem;
+  transform: translateY(-300px);
+}
+.notification4.bottomLeft {
+  bottom: 1.5rem;
+  left: 1.5rem;
+  transform: translateY(300px);
+}
+.notification4.continous {
+  opacity: 0;
+  transform: unset;
+}
+.notification4.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.notification4 .notification__close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.25rem;
+  border-radius: 9999px;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+.notification4 .notification__close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.notification4 .notification__close-btn .icon {
+  width: 1rem;
+  height: 1rem;
+}
+.notification4__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.notification4 .notification__icon-box {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.notification4 .notification__icon-box .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.notification4 .contentTitle {
+  margin: 0;
+  padding: 0 !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+.notification4 .contentSubTitle {
+  margin: 0;
+  padding: 0 !important;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/Components/Common/GlobalTemplates/Notification/Notification5.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.notification5 {
+  position: fixed;
+  z-index: 9999;
+  width: 20rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #10b981, #16a34a);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.3s ease-in-out, opacity 0.8s ease-in-out;
+}
+.notification5.topRight {
+  top: 1.5rem;
+  right: 1.5rem;
+  transform: translateY(-300px);
+}
+.notification5.bottomRight {
+  bottom: 1.5rem;
+  right: 1.5rem;
+  transform: translateY(300px);
+}
+.notification5.topLeft {
+  left: 1.5rem;
+  top: 1.5rem;
+  transform: translateY(-300px);
+}
+.notification5.bottomLeft {
+  bottom: 1.5rem;
+  left: 1.5rem;
+  transform: translateY(300px);
+}
+.notification5.continous {
+  opacity: 0;
+  transform: unset;
+}
+.notification5.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.notification5__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.notification5 .contentTitle {
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0 !important;
+}
+.notification5 .contentSubTitle {
+  margin: 0;
+  padding: 0 !important;
+  font-size: 0.75rem;
+  color: rgba(220, 252, 231, 0.9);
+}
+.notification5 .notification__close-btn {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+.notification5 .notification__close-btn:hover {
+  background-color: #059669;
+}
+.notification5 .notification__close-btn .icon {
+  width: 1rem;
+  height: 1rem;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/Components/Common/GlobalTemplates/Notification/Notification6.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.notification6 {
+  position: fixed;
+  z-index: 9999;
+  width: 18rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: transform 0.3s ease-in-out, opacity 0.8s ease-in-out;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+.notification6.topRight {
+  top: 1.5rem;
+  right: 1.5rem;
+  transform: translateY(-300px);
+}
+.notification6.bottomRight {
+  bottom: 1.5rem;
+  right: 1.5rem;
+  transform: translateY(300px);
+}
+.notification6.topLeft {
+  left: 1.5rem;
+  top: 1.5rem;
+  transform: translateY(-300px);
+}
+.notification6.bottomLeft {
+  bottom: 1.5rem;
+  left: 1.5rem;
+  transform: translateY(300px);
+}
+.notification6.continous {
+  opacity: 0;
+  transform: unset;
+}
+.notification6.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.notification6__header {
+  background: linear-gradient(to right, #06b6d4, #2563eb);
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notification6 .contentTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.notification6 .contentTitle svg {
+  height: 25px;
+  width: 25px;
+}
+.notification6 .contentTitle span {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.notification6__close {
+  padding: 0.25rem;
+  border: none;
+  background: transparent;
+  color: #fff;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.notification6__close:hover {
+  background-color: rgba(37, 99, 235, 0.7);
+}
+.notification6__close .icon {
+  width: 20px;
+  height: 20px;
+}
+.notification6__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.notification6 .contentSubTitle {
+  font-size: 0.875rem;
+  color: #374151;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.notification6__button {
+  width: 100%;
+  background: linear-gradient(to right, #06b6d4, #2563eb);
+  color: #fff;
+  padding: 0.625rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.notification6__button:hover {
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transform: translateY(-2px);
+}
+.notification6__button .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/*# sourceMappingURL=view.css.map*/

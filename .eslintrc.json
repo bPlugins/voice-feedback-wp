@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "plugin:@wordpress/eslint-plugin/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jquery": true
+  },
+  "globals": {
+    "wp": "readonly",
+    "jQuery": "readonly",
+    "voiceRecorder": "readonly"
+  },
+  "rules": {
+    "prettier/prettier": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-undef": "off",
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "no-shadow": "off",
+    "no-nested-ternary": "off",
+    "no-alert": "off",
+    "no-else-return": "off",
+    "no-bitwise": "off",
+    "eqeqeq": "off",
+    "no-lonely-if": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "@wordpress/no-unsafe-wp-apis": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/display-name": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "no-var": "off",
+    "no-unused-expressions": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/iframe-has-title": "off",
+    "camelcase": "off"
+  }
+}

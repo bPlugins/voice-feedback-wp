@@ -1,0 +1,335 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Fields/RangeControl/RangeControl.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.range-control {
+  margin-bottom: 30px;
+}
+.range-control .range-wrapper .range-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  gap: 20px;
+}
+.range-control .range-wrapper .range-input .range-container {
+  width: 100%;
+}
+.range-control .range-wrapper .range-input .range-container .range-slider {
+  width: 100%;
+  height: 10px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+.range-control .range-wrapper .range-input .range-container .range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #146ef5;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.range-control .range-wrapper .range-input .range-container .range-slider::-webkit-slider-thumb:hover {
+  background: #146ef5;
+  transform: scale(1.1);
+}
+.range-control .range-wrapper .range-input .range-container .range-slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #146ef5;
+  cursor: pointer;
+  border: none;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.range-control .range-wrapper .range-input .range-container .range-slider::-moz-range-thumb:hover {
+  background: #146ef5;
+  transform: scale(1.1);
+}
+.range-control .range-wrapper .range-input .range-container .range-slider:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(58, 122, 219, 0.3);
+}
+.range-control .range-wrapper .range-input .range-container .range-slider:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 3px rgba(58, 122, 219, 0.3);
+}
+.range-control .range-wrapper .range-input .value-display {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  min-width: 60px;
+  justify-content: center;
+}
+.range-control .range-wrapper .range-input .value-display .range-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #146ef5;
+}
+.range-control .range-wrapper .range-input .value-display .unit {
+  font-size: 12px;
+  color: #6b7280;
+}
+.range-control .range-wrapper .help-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  font-style: italic;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Components/Shared/FieldHeader/FieldHeader.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.bplvf-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.bplvf-header .bplvf-header-icon {
+  display: flex;
+}
+.bplvf-header .bplvf-header-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #146ef5;
+}
+.bplvf-header .bplvf-field-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #22262e;
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+}
+
+.bplvf-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bplvf-container .bplvf-header {
+  margin-bottom: 0;
+}
+.bplvf-container .bplvf-pro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #f59e0b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+.bplvf-container .bplvf-pro-badge .bplvf-pro-icon {
+  display: flex;
+  align-items: center;
+}
+.bplvf-container .bplvf-pro-badge .bplvf-pro-icon svg {
+  width: 14px;
+  height: 14px;
+  fill: #ffffff;
+}
+.bplvf-container .bplvf-pro-badge .bplvf-pro-text {
+  line-height: 1;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Fields/Text/text.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+.bpl-text-field {
+  margin-bottom: 25px;
+}
+.bpl-text-field .input-field-wrapper .input-field {
+  width: 100%;
+  padding: 4px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  transition: all 0.2s ease;
+}
+.bpl-text-field .input-field-wrapper .input-field:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+.bpl-text-field .input-field-wrapper .input-field:hover {
+  border-color: #9ca3af;
+}
+.bpl-text-field .input-field-wrapper .help-text {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 5px 0 0 0;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Fields/ToggleControl/ToggleControl.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.toggle-control-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.toggle-control-field .field-wrapper {
+  margin-bottom: 10px;
+}
+.toggle-control-field .field-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.toggle-control-field .field-wrapper .toggle-description p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  font-style: italic;
+}
+.toggle-control-field .field-wrapper .toggle-field {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 25px;
+  cursor: pointer;
+}
+.toggle-control-field .field-wrapper .toggle-field input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-control-field .field-wrapper .toggle-field input:checked + .toggle-slider {
+  background-color: #146ef5;
+}
+.toggle-control-field .field-wrapper .toggle-field input:checked + .toggle-slider::before {
+  transform: translateX(24px);
+}
+.toggle-control-field .field-wrapper .toggle-field input:checked:hover + .toggle-slider {
+  background-color: #146ef5;
+}
+.toggle-control-field .field-wrapper .toggle-field .toggle-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+}
+.toggle-control-field .field-wrapper .toggle-field .toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.4s ease, background-color 0.2s ease;
+}
+.toggle-control-field .field-wrapper .toggle-field:hover .toggle-slider {
+  background-color: #bfbfbf;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Fields/SelectControl/SelectField.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.bplvf-select-control {
+  margin-bottom: 30px;
+  flex: 1;
+}
+.bplvf-select-control .select-input-group {
+  width: 100%;
+}
+.bplvf-select-control .select-input-group .select-dropdown {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding: 4px 36px 4px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 14px;
+  color: #1f2937;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #6b7280 50%), linear-gradient(135deg, #6b7280 50%, transparent 50%);
+  background-position: calc(100% - 20px) center, calc(100% - 15px) center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+.bplvf-select-control .select-input-group .select-dropdown:hover {
+  border-color: #9ca3af;
+}
+.bplvf-select-control .select-input-group .select-dropdown:focus {
+  outline: none;
+  border-color: #146ef5;
+  box-shadow: 0 0 0 3px rgba(58, 122, 219, 0.1);
+}
+.bplvf-select-control .select-input-group .select-dropdown:disabled {
+  background-color: #f9fafb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+.bplvf-select-control .select-input-group .select-dropdown option {
+  color: #1f2937;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/admin-pages/Fields/IconPicker/IconPicker.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.icon-picker-field {
+  margin-bottom: 25px;
+}
+.icon-picker-field .icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+.icon-picker-field .icon-grid .icon-btn {
+  width: 48px;
+  height: 48px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: #f8f9fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.icon-picker-field .icon-grid .icon-btn svg {
+  width: 22px;
+  height: 22px;
+  color: #333;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.icon-picker-field .icon-grid .icon-btn:hover {
+  background: #eef2f7;
+}
+.icon-picker-field .icon-grid .icon-btn:hover svg {
+  transform: scale(1.15);
+  color: #146ef5;
+}
+.icon-picker-field .icon-grid .icon-btn.selected {
+  border-color: #146ef5;
+  background: #eaf2ff;
+}
+.icon-picker-field .icon-grid .icon-btn.selected svg {
+  color: #146ef5;
+}
+
+/*# sourceMappingURL=src_admin-pages_SettingsPage_Settings_TemplateSettings_ModalFeedback_General_js.css.map*/

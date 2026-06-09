@@ -1,0 +1,216 @@
+# Copyright (C) 2026 bPlugins
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Voice Feedback – Collect Anonymous Voice Messages & Real User Insights Instantly 2.2.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/voice-feedback\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-08T08:52:15+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: voice-feedback\n"
+
+#. Plugin Name of the plugin
+#: voice-feedback.php
+msgid "Voice Feedback – Collect Anonymous Voice Messages & Real User Insights Instantly"
+msgstr ""
+
+#. Description of the plugin
+#: voice-feedback.php
+msgid "Send Voice feedback to the site admin on the go. User can embed the voice feedback form in the contact form by shortcode."
+msgstr ""
+
+#. Author of the plugin
+#: voice-feedback.php
+msgid "bPlugins"
+msgstr ""
+
+#. Author URI of the plugin
+#: voice-feedback.php
+msgid "https://bplugins.com"
+msgstr ""
+
+#: includes/admin/class-bplvf-admin.php:97
+msgid "<span style=\"color: #f18500;\">Help & Demos</span>"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/General/General.js:28
+msgid "Settings"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/General/General.js:32
+msgid "Allow Screen Record"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/General/General.js:49
+#: src/block/Components/Backend/Settings/Style/Style.js:146
+msgid "Recording Tabs"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/General/General.js:53
+msgid "Show/Hide Button Icon"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/General/General.js:72
+msgid "Show/Hide Button Text"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/General/General.js:94
+msgid "Audio Settings"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/General/General.js:115
+msgid "Start Recording Button Text"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/General/General.js:135
+msgid "Video Settings"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/General/General.js:156
+msgid "Start Screen Recording Button Text"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Settins.js:88
+msgid "All Screen Recording: "
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Settins.js:90
+msgid "By activate this feature user can give screen recording also with their voice."
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Settins.js:98
+msgid "Customize Your Feedback Form: "
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Settins.js:103
+msgid "Customize everything in premium version."
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Settins.js:111
+msgid "Buttons Text Typography: "
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Settins.js:113
+msgid "Change button font size, font weight, font family, line height, font style and etc."
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:46
+msgid "Container"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:49
+msgid "Width"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:94
+#: src/block/Components/Backend/Settings/Style/Style.js:195
+#: src/block/Components/Backend/Settings/Style/Style.js:299
+msgid "Border Radius"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:111
+#: src/block/Components/Backend/Settings/Style/Style.js:364
+#: src/block/Components/Backend/Settings/Style/Style.js:406
+msgid "Background Color"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:125
+#: src/block/Components/Backend/Settings/Style/Style.js:316
+msgid "Padding"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:152
+msgid "Tab Text Typography"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:173
+msgid "Icon Size"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:215
+msgid "Active Tab Color"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:233
+msgid "Active Tab Background Color"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:256
+msgid "Button Padding"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:282
+msgid "Buttons"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:286
+msgid "Typography"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:331
+msgid "Normal"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:335
+msgid "Hover"
+msgstr ""
+
+#: src/block/Components/Backend/Settings/Style/Style.js:346
+#: src/block/Components/Backend/Settings/Style/Style.js:388
+msgid "Text Color"
+msgstr ""
+
+#: src/block/block.json
+msgctxt "block title"
+msgid "Voice Feedback Button"
+msgstr ""
+
+#: src/block/block.json
+msgctxt "block description"
+msgid "Voice Recorder Block for Collecting Audio Feedback."
+msgstr ""
+
+#: src/block/block.json
+msgctxt "block keyword"
+msgid "voice feedback"
+msgstr ""
+
+#: src/block/block.json
+msgctxt "block keyword"
+msgid "voice record"
+msgstr ""
+
+#: src/block/block.json
+msgctxt "block keyword"
+msgid "recording"
+msgstr ""
+
+#: src/block/block.json
+msgctxt "block keyword"
+msgid "feedback"
+msgstr ""
+
+#: src/block/block.json
+msgctxt "block keyword"
+msgid "voice recorder"
+msgstr ""
+
+#: src/block/block.json
+msgctxt "block keyword"
+msgid "audio recorder"
+msgstr ""
+
+#: src/block/block.json
+msgctxt "block keyword"
+msgid "audio record"
+msgstr ""
+
+#: src/block/block.json
+msgctxt "block keyword"
+msgid "audio feedback"
+msgstr ""
