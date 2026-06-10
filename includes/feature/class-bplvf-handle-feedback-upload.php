@@ -31,7 +31,7 @@ if(!class_exists('BPLVF_Handle_Feedback_Upload')) {
             $file = [
                 'name'     => isset($_FILES['audio']['name']) ? sanitize_file_name(wp_unslash($_FILES['audio']['name'])) : '',
                 'type'     => isset($_FILES['audio']['type']) ? sanitize_text_field(wp_unslash($_FILES['audio']['type'])) : '',
-                'tmp_name' => isset($_FILES['audio']['tmp_name']) ? sanitize_text_field(wp_unslash($_FILES['audio']['tmp_name'])) : '',
+                'tmp_name' => isset($_FILES['audio']['tmp_name']) ? wp_unslash($_FILES['audio']['tmp_name']) : '',
                 'error'    => (int) $_FILES['audio']['error'],
                 'size'     => isset($_FILES['audio']['size']) ? (int) $_FILES['audio']['size'] : 0,
             ];

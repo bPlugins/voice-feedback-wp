@@ -491,6 +491,7 @@ function bplvf_get_unread_feedback_count() {
         'post_status'    => 'publish',
         'posts_per_page' => -1,
         'fields'         => 'ids',
+        // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
         'meta_query'     => [
             [
                 'key'     => 'bplvf_read',
@@ -511,6 +512,7 @@ function bplvf_mark_all_feedback_as_read() {
         'post_status'    => 'publish',
         'posts_per_page' => -1,
         'fields'         => 'ids',
+        // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
         'meta_query'     => [
             [
                 'key'     => 'bplvf_read',

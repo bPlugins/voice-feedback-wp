@@ -12,12 +12,14 @@ class AdminVoiceFeedback {
  
     public static function register_admin_menu() {
         // Mark all as read if we are visiting the feedback page
-        if ( isset( $_GET['page'] ) && $_GET['page'] === 'voice-feedback' ) {
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+        if ( current_user_can( 'manage_options' ) && isset( $_GET['page'] ) && $_GET['page'] === 'voice-feedback' ) {
             $unread_posts = get_posts([
                 'post_type'      => 'voice_recording',
                 'post_status'    => 'publish',
                 'posts_per_page' => -1,
                 'fields'         => 'ids',
+                // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
                 'meta_query'     => [
                     [
                         'key'     => 'bplvf_read',
@@ -123,7 +125,7 @@ class AdminVoiceFeedback {
         <div
            class="vfd-settings-page-wrapper" id="vfdUsersFeedbacksWrapper"
            data-admin-url="<?php echo esc_url( admin_url() ); ?>"
-           data-user="https://www.gravatar.com/avatar/<?php echo esc_attr(md5(strtolower(trim(get_userdata(get_current_user_id())->user_email)))); ?>?s=32"
+           data-user="<?php echo esc_url( get_avatar_url( get_current_user_id(), [ 'size' => 32 ] ) ); ?>"
         >
         </div>
     <?php
@@ -173,7 +175,7 @@ class AdminVoiceFeedback {
           </style>
           <div class="vfd-settings-page-wrapper" 
              id="bplvfFeedbackSettingsWrapper"
-             data-user="https://www.gravatar.com/avatar/<?php echo esc_attr(md5(strtolower(trim(get_userdata(get_current_user_id())->user_email)))); ?>?s=32"
+             data-user="<?php echo esc_url( get_avatar_url( get_current_user_id(), [ 'size' => 32 ] ) ); ?>"
              data-info='<?php echo esc_attr( wp_json_encode( [
                 'adminUrl' => admin_url(),
             ] ) ); ?>'>

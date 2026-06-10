@@ -17,6 +17,9 @@ if(!class_exists('BPLVF_Ajax_Controller')) {
         // Save or Update Global
         public static function handle_save_global() {
             check_ajax_referer('bplvf_nonce', 'nonce');
+            if ( ! current_user_can( 'manage_options' ) ) {
+                wp_send_json_error( 'Forbidden', 403 );
+            }
             // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- Decoded settings array is recursively sanitized below using self::sanitize_recursive.
             $settings_raw = isset($_POST['settings']) ? wp_unslash($_POST['settings']) : '[]';
             $settings = json_decode($settings_raw, true);
@@ -31,6 +34,9 @@ if(!class_exists('BPLVF_Ajax_Controller')) {
         // Get Global
         public static function handle_get_global() {
             check_ajax_referer('bplvf_nonce', 'nonce');
+            if ( ! current_user_can( 'manage_options' ) ) {
+                wp_send_json_error( 'Forbidden', 403 );
+            }
             $settings = get_option('global_voice_feedback', []);
             wp_send_json_success(['settings' => $settings]);
         }
@@ -38,6 +44,9 @@ if(!class_exists('BPLVF_Ajax_Controller')) {
         // Toggle Feedback isResolved
         public static function handle_toggle_resolve() {
             check_ajax_referer('bplvf_voice_feedback_nonce', 'nonce');
+            if ( ! current_user_can( 'manage_options' ) ) {
+                wp_send_json_error( 'Forbidden', 403 );
+            }
         
             $id = isset($_POST['id']) ? intval(wp_unslash($_POST['id'])) : 0;
             if (!$id) {
@@ -54,6 +63,9 @@ if(!class_exists('BPLVF_Ajax_Controller')) {
         // Delete Feedback
         public static function handle_delete_user_feedback() {
             check_ajax_referer('bplvf_voice_feedback_nonce', 'nonce');
+            if ( ! current_user_can( 'manage_options' ) ) {
+                wp_send_json_error( 'Forbidden', 403 );
+            }
         
             $id = isset($_POST['id']) ? intval(wp_unslash($_POST['id'])) : 0;
             if (!$id) {
