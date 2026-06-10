@@ -2,7 +2,7 @@
   "apiVersion": 3,
   "name": "bplvf/voice-feedback",
   "title": "Voice Feedback Button",
-  "version": "2.2.1",
+  "version": "2.2.3",
   "description": "Voice Recorder Block for Collecting Audio Feedback.",
   "category": "widgets",
   "keywords": [
