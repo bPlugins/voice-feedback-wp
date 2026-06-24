@@ -287,11 +287,23 @@ class BPLVoiceFeedbackAPI {
                 'attach_feedback' => false,
                 'enable_logging' => true,
             ],
-            "email_logs" => [ 
+            "email_logs" => [
             ],
             'privacy' => [
                 'ask_name_email' => false,
-            ]
+            ],
+            'spam_protection' => [
+                'rate_limit_enabled'     => true,
+                'rate_limit_max'         => 5,
+                'rate_limit_window'      => 3600,
+                'rate_limit_message'     => 'Too many submissions. Please try again later.',
+                'ip_source'              => 'REMOTE_ADDR',
+                'captcha_enabled'        => false,
+                'turnstile_site_key'     => '',
+                'turnstile_secret_key'   => '',
+                'captcha_mode'           => 'invisible',
+                'captcha_fail_behaviour' => 'fail_open',
+            ],
         ];
     }
 
@@ -558,9 +570,27 @@ class BPLVoiceFeedbackAPI {
             ],
             'privacy' => [
                 'ask_name_email' => !empty($params['privacy']['ask_name_email']),
-            ]
+            ],
+            'spam_protection' => [
+                'rate_limit_enabled'     => !empty($params['spam_protection']['rate_limit_enabled']),
+                'rate_limit_max'         => max(1, (int)($params['spam_protection']['rate_limit_max'] ?? 5)),
+                'rate_limit_window'      => (int)($params['spam_protection']['rate_limit_window'] ?? 3600),
+                'rate_limit_message'     => sanitize_text_field($params['spam_protection']['rate_limit_message'] ?? 'Too many submissions. Please try again later.'),
+                'ip_source'              => in_array($params['spam_protection']['ip_source'] ?? '', ['REMOTE_ADDR','HTTP_CF_CONNECTING_IP','HTTP_X_FORWARDED_FOR'], true)
+                                                ? $params['spam_protection']['ip_source']
+                                                : 'REMOTE_ADDR',
+                'captcha_enabled'        => !empty($params['spam_protection']['captcha_enabled']),
+                'turnstile_site_key'     => sanitize_text_field($params['spam_protection']['turnstile_site_key'] ?? ''),
+                'turnstile_secret_key'   => sanitize_text_field($params['spam_protection']['turnstile_secret_key'] ?? ''),
+                'captcha_mode'           => in_array($params['spam_protection']['captcha_mode'] ?? '', ['invisible','visible'], true)
+                                                ? $params['spam_protection']['captcha_mode']
+                                                : 'invisible',
+                'captcha_fail_behaviour' => in_array($params['spam_protection']['captcha_fail_behaviour'] ?? '', ['fail_open','fail_closed'], true)
+                                                ? $params['spam_protection']['captcha_fail_behaviour']
+                                                : 'fail_open',
+            ],
         ];
-        
+
         update_option(self::$option_key, $sanitizedData);
 
         return new WP_REST_Response([

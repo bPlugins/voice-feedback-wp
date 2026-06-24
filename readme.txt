@@ -3,7 +3,7 @@ Contributors: bplugins, abuhayat, shehabulislam, taninrahman, farazi1, freemius
 Tags: block, user voice feedback, feedback form, user feedback, audio feedback 
 Requires at least: 6.5+
 Tested up to: 7.0
-Stable tag: 2.2.3
+Stable tag: 2.2.4
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -41,6 +41,8 @@ https://youtu.be/Z7yfMWb4jAI
 - **Smooth Animations** – Animated feedback forms create a polished, professional user experience.
 
 - **Lightweight and Secure** – No personal data is collected; focused only on voice-based user interaction.
+
+- **Spam Protection & CAPTCHA (Free)** – Protect your site from automated spam bots using Cloudflare Turnstile and Rate Limiting.
 
 
 == What’s New in the Pro Version? ==
@@ -151,6 +153,9 @@ Please report security bugs found in the source code of the Voice Feedback plugi
 
 == Changelog ==
 
+= 2.2.4 - 24 June 2026 =
+* **New:** Added completely free Rate Limit and Spam Protection CAPTCHA feature using Cloudflare Turnstile to prevent spam submissions.
+
 = 2.2.3 - 10 June 2026 =
 * **Update:** Removed restricted "Locked Fields" to improve user flexibility
 * **New:** Added Email Gate option to require users to enter their name and email before submitting voice feedback.
@@ -187,6 +192,9 @@ Please report security bugs found in the source code of the Voice Feedback plugi
 * Initial release with core features: drawer, block, shortcode, admin library, and basic customization.
 
 == Upgrade Notice ==
+
+= 2.2.4 =
+Added completely free Rate Limit and Spam Protection CAPTCHA feature using Cloudflare Turnstile to prevent spam submissions.
 
 = 2.2.3 =
 Added Email Gate feature and fixed translation command crashes.

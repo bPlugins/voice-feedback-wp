@@ -8,6 +8,7 @@ import Footer from '../Components/Pages/Footer';
 import { Check } from '../Utils/icons';
 import Emails from './Settings/Emails';
 import Privacy from './Settings/Privacy';
+import Protections from './Settings/Protections';
 import { useFeedbackSettings } from '../Utils/hooks/useFeedbackSettings';
 import Toast from '../Components/Shared/Toast/Toast';
 import ProFeaturesCard from '../Components/Shared/ProFeaturesCard/ProFeaturesCard';
@@ -39,7 +40,18 @@ const FeedbackSettingsContainer = ({ adminUrl }) => {
 		},
 		// { value: "submissionHandle", label: "Submission Handling" },
 		// { value: "dataManagement", label: "Data Management & Storage Controls" },
-		// { value: "protection", label: "Rate Limit & Spam Protection" },
+		{
+			value: 'protection',
+			label: 'Spam Protection',
+			badge: 'New',
+			description: 'Protect submissions with rate limiting and CAPTCHA.',
+			icon: (
+				<svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+					<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+					<path d="M9 12l2 2 4-4" />
+				</svg>
+			),
+		},
 		// { value: "analytics", label: "Analytics / Insights" },
 		{
 			value: 'privacy',
@@ -115,6 +127,11 @@ const FeedbackSettingsContainer = ({ adminUrl }) => {
 										{isActive && (
 											<div className="active-indicator" />
 										)}
+										{tab.badge && (
+											<span className="tab-badge">
+												{tab.badge}
+											</span>
+										)}
 										<div className="tab-graphic-wrapper">
 											<div className={`tab-mini-graphic ${tab.value}`}>
 												{tab.icon}
@@ -146,6 +163,14 @@ const FeedbackSettingsContainer = ({ adminUrl }) => {
 								updateFeedbackSettings={
 									updateFeedbackSettings
 								} 
+							/>
+						)}
+						{activeSettings === 'protection' && (
+							<Protections
+								settings={settings}
+								updateFeedbackSettings={
+									updateFeedbackSettings
+								}
 							/>
 						)}
 						{activeSettings === 'privacy' && (

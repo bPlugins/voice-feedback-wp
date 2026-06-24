@@ -23,7 +23,9 @@ class BPLVoiceFeedback {
         require_once BPLVF_DIR_PATH . 'includes/feature/class-bplvf-handle-email-notification.php';
         require_once BPLVF_DIR_PATH . 'includes/feature/class-bplvf-handle-feedback-upload.php';
         require_once BPLVF_DIR_PATH . 'includes/feature/class-bplvf-shortcode.php'; 
+        require_once BPLVF_DIR_PATH . 'includes/feature/class-bplvf-spam-protection.php';
 
+        new BPLVF_Spam_Protection();
         new BPLVF_Handle_Feedback_Upload();
     }
 
@@ -130,7 +132,11 @@ class BPLVoiceFeedback {
             wp_enqueue_script('bplvf-feedback-settings-script', BPLVF_DIR_URL. 'build/feedback-settings.js', ['react','react-dom','wp-components'], BPLVF_VERSION, true);
             wp_enqueue_style('bplvf-feedback-settings-style', BPLVF_DIR_URL. 'build/feedback-settings.css', [], BPLVF_VERSION);
     
-            wp_localize_script('bplvf-feedback-settings-script', 'bplvfSettings', ['nonce'   => wp_create_nonce('wp_rest')]);
+            wp_localize_script('bplvf-feedback-settings-script', 'bplvfSettings', [
+                'nonce'         => wp_create_nonce('wp_rest'),
+                'hp_field_name' => BPLVF_Spam_Protection::get_honeypot_field_name(),
+                'spam_settings' => BPLVF_Spam_Protection::get_settings(),
+            ]);
         }
     }
 

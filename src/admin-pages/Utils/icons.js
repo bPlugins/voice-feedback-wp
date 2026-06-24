@@ -855,3 +855,43 @@ export const PaintBrush = ( props ) => {
 		</svg>
 	);
 };
+
+export const KeyIcon = ( props ) => {
+	return (
+		<svg
+			{ ...props }
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="2"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+		>
+			<path d="m21 2-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0 3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+		</svg>
+	);
+};
+
+export const HelpCircleIcon = ( props ) => {
+	return (
+		<svg
+			{ ...props }
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="2"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+		>
+			<circle cx="12" cy="12" r="10" />
+			<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+			<line x1="12" y1="17" x2="12.01" y2="17" />
+		</svg>
+	);
+};
