@@ -476,7 +476,7 @@ const VoiceRecorder = ( { attributes, id } ) => {
 	const handleSendClick = useCallback( () => {
 		const isEmailGateActive = window.voiceRecorder?.ask_name_email;
 		if ( isEmailGateActive ) {
-			setShowEmailGate( true );
+			setShowEmailGate(true);
 		} else {
 			handleSend();
 		}
