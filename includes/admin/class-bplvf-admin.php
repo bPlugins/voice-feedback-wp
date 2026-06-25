@@ -1,7 +1,7 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-class AdminVoiceFeedback {
+class BPLVF_Admin {
 
     public static $unread_feedback_ids = [];
 
@@ -184,4 +184,4 @@ class AdminVoiceFeedback {
       }
 
 }
-new AdminVoiceFeedback();
+new BPLVF_Admin();

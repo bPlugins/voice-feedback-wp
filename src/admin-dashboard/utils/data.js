@@ -105,7 +105,7 @@ export const welcomeInfo = ( adminUrl ) => {
 		},
 	changelogs: [
 		{
-			version: '2.2.4 - 24 June 2026',
+			version: '2.2.4 - 25 June 2026',
 			type: 'new',
 			list: [
 				'Added completely free Rate Limit and Spam Protection CAPTCHA feature using Cloudflare Turnstile to prevent spam submissions.',

@@ -1,6 +1,6 @@
 <?php
 
-class BPLVoiceFeedback {
+class BPLVF_VoiceFeedback {
 
     public function __construct() {
         add_action('init', ['BPLVF_Ajax_Controller', 'init']);
@@ -65,7 +65,7 @@ class BPLVoiceFeedback {
 
             $user_feedbacks = array_map(function($post) {
                 $is_read = get_post_meta($post->ID, 'bplvf_read', true);
-                $unread = ($is_read === '0' || (class_exists('AdminVoiceFeedback') && in_array($post->ID, AdminVoiceFeedback::$unread_feedback_ids)));
+                $unread = ($is_read === '0' || (class_exists('BPLVF_Admin') && in_array($post->ID, BPLVF_Admin::$unread_feedback_ids)));
                 
                 $user_name = get_post_meta($post->ID, 'voice_user_name', true);
                 $user_email = get_post_meta($post->ID, 'voice_user_email', true);

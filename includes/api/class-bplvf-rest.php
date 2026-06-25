@@ -3,9 +3,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if (!class_exists('BPLVoiceFeedbackAPI')) {
+if (!class_exists('BPLVF_REST_API')) {
 
-class BPLVoiceFeedbackAPI {
+class BPLVF_REST_API {
 
     private static $option_key = 'bplvf_feedback_settings';
 
@@ -754,7 +754,7 @@ class BPLVoiceFeedbackAPI {
 
 }
 
-new BPLVoiceFeedbackAPI();
+new BPLVF_REST_API();
 
 }
 ?>

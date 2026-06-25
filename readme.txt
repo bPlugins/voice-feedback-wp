@@ -153,7 +153,7 @@ Please report security bugs found in the source code of the Voice Feedback plugi
 
 == Changelog ==
 
-= 2.2.4 - 24 June 2026 =
+= 2.2.4 - 25 June 2026 =
 * **New:** Added completely free Rate Limit and Spam Protection CAPTCHA feature using Cloudflare Turnstile to prevent spam submissions.
 
 = 2.2.3 - 10 June 2026 =

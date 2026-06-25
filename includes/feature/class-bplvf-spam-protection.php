@@ -35,19 +35,27 @@ if (!class_exists('BPLVF_Spam_Protection')) {
 		 * Run all spam checks in order. Any failure ends the request before
 		 * the upload handler at priority 10 can fire.
 		 */
-		public function run_checks()
-		{
-			if (!$this->check_honeypot()) {
-				wp_send_json_error('Submission blocked.', 400);
+		public function run_checks() {
+			if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'voice_feedback_nonce' ) ) {
+				wp_send_json_error( 'Invalid nonce.', 403 );
 			}
 
-			if (!$this->check_rate_limit()) {
+			$field_name   = self::get_honeypot_field_name();
+			$honeypot_val = isset( $_POST[ $field_name ] ) ? sanitize_text_field( wp_unslash( $_POST[ $field_name ] ) ) : '';
+
+			if ( ! $this->check_honeypot( $honeypot_val ) ) {
+				wp_send_json_error( 'Submission blocked.', 400 );
+			}
+
+			if ( ! $this->check_rate_limit() ) {
 				$settings = self::get_settings();
-				wp_send_json_error($settings['rate_limit_message'], 429);
+				wp_send_json_error( $settings['rate_limit_message'], 429 );
 			}
 
-			if (!$this->check_captcha()) {
-				wp_send_json_error('CAPTCHA verification failed.', 403);
+			$captcha_token = isset( $_POST['cf_turnstile_token'] ) ? sanitize_text_field( wp_unslash( $_POST['cf_turnstile_token'] ) ) : '';
+
+			if ( ! $this->check_captcha( $captcha_token ) ) {
+				wp_send_json_error( 'CAPTCHA verification failed.', 403 );
 			}
 
 			// All checks passed — let the upload handler run.
@@ -59,15 +67,10 @@ if (!class_exists('BPLVF_Spam_Protection')) {
 		 *
 		 * @return bool True if the request passes (field empty / absent).
 		 */
-		private function check_honeypot()
+		private function check_honeypot( $value )
 		{
-			$field_name = self::get_honeypot_field_name();
-
-			if (isset($_POST[$field_name])) {
-				$value = sanitize_text_field(wp_unslash($_POST[$field_name]));
-				if ('' !== trim($value)) {
-					return false; // Bot detected.
-				}
+			if ( '' !== trim( $value ) ) {
+				return false; // Bot detected.
 			}
 
 			return true;
@@ -120,19 +123,15 @@ if (!class_exists('BPLVF_Spam_Protection')) {
 		 *
 		 * @return bool True if verification succeeds (or CAPTCHA disabled).
 		 */
-		private function check_captcha()
+		private function check_captcha( $token )
 		{
 			$settings = self::get_settings();
 
-			if (!$settings['captcha_enabled']) {
+			if ( ! $settings['captcha_enabled'] ) {
 				return true;
 			}
 
-			$token = isset($_POST['cf_turnstile_token'])
-				? sanitize_text_field(wp_unslash($_POST['cf_turnstile_token']))
-				: '';
-
-			if ('' === $token) {
+			if ( '' === $token ) {
 				return false;
 			}
 

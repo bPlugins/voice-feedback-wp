@@ -64,7 +64,7 @@ if ( function_exists( 'bplvf' ) ) {
 
     // Load Main Plugin Class
     require_once BPLVF_DIR_PATH . 'includes/class-bplvf-main.php';
-    new BPLVoiceFeedback();
+    new BPLVF_VoiceFeedback();
 
     add_action('wp_mail_failed', function ($error) {
         if (is_wp_error($error)) {
