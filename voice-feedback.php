@@ -2,7 +2,7 @@
 /**
  * Plugin Name:   Voice Feedback – Collect Anonymous Voice Messages & Real User Insights Instantly
  * Description:   Send Voice feedback to the site admin on the go. User can embed the voice feedback form in the contact form by shortcode. 
- * Version:       2.2.4
+ * Version:       2.2.5
  * Author:        bPlugins
  * Author URI:    https://bplugins.com
  * License:       GPLv3
@@ -19,7 +19,7 @@ if ( function_exists( 'bplvf' ) ) {
 } else {
     define('BPLVF_DIR_PATH', plugin_dir_path(__FILE__));
     define('BPLVF_DIR_URL', plugin_dir_url(__FILE__));
-    define('BPLVF_VERSION', "2.2.4");
+    define('BPLVF_VERSION', "2.2.5");
 
     if ( ! function_exists( 'bplvf' ) ) {
         // Create a helper function for easy SDK access.
@@ -65,6 +65,10 @@ if ( function_exists( 'bplvf' ) ) {
     // Load Main Plugin Class
     require_once BPLVF_DIR_PATH . 'includes/class-bplvf-main.php';
     new BPLVF_VoiceFeedback();
+
+    if (file_exists(BPLVF_DIR_PATH . 'includes/admin/class-bplvf-promo-banner.php')) {
+        require_once BPLVF_DIR_PATH . 'includes/admin/class-bplvf-promo-banner.php';
+    }
 
     add_action('wp_mail_failed', function ($error) {
         if (is_wp_error($error)) {
